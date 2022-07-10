@@ -31,12 +31,12 @@ int main()
 
 int input(int *a, int *n) {
     char auxillaury_c;
-    int gavno;
+    int help;
     if (scanf("%d%c", n, &auxillaury_c) == 2 && auxillaury_c == '\n' && *n < 11) {
         for (int i = 0;i < *n;i++)  {
-            if (scanf("%d%c", &gavno, &auxillaury_c) == 2 &&
+            if (scanf("%d%c", &help, &auxillaury_c) == 2 &&
                 (auxillaury_c == '\n' || auxillaury_c == ' ')) {
-                a[i] = gavno;
+                a[i] = help;
             } else {
                 true_or_false = 0;
             }

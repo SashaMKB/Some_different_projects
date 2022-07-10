@@ -2,7 +2,7 @@
 
 int fib_func(int i)
 {
-    if ( i<= 2) {
+    if ( i == 1 || i == 0) {
         return 1;
     } else {
         return fib_func(i-1) + fib_func(i-2);
